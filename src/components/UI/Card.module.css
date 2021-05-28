@@ -1,0 +1,11 @@
+.cardcss {
+    display: flex;
+    justify-content: center;
+    background: white;
+    width: 30%;
+    margin: auto;
+    margin-top: 2%;
+    padding: 1%;
+    border-radius: 15px;
+    text-align: center;
+}

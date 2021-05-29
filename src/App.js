@@ -20,15 +20,22 @@ function App() {
   const [userData, setUserData] = useState(DATA);
 
   const addUserHandler = (newuser) => {
-    setUserData((prevState)=>{
+    setUserData((prevState) => {
       return [newuser, ...prevState];
+    })
+  }
+
+  const deleteUserHandler = (userid) => {
+    setUserData((prevState) => {
+      const updatedUser = prevState.filter(user => user.id !== userid)
+      return updatedUser;
     })
   }
 
   return (
     <div>
       <AddUsers onAddUser={addUserHandler} />
-      <Results items={userData} />
+      <Results items={userData} onDeleteUser={deleteUserHandler} />
     </div>
   );
 }

@@ -1,4 +1,5 @@
-button {
+.button {
+  cursor: pointer;
   margin-top: 30px;
   margin-bottom: 50px;
   border-radius: 0px;
@@ -7,14 +8,4 @@ button {
   background-color: purple;
   color: white;
   font-size: medium;
-}
-
-.inputarea {
-  margin-top: 30px;
-}
-
-input:focus {
-  padding: 4%;
-  outline: none;
-  border: 1px solid purple;
 }

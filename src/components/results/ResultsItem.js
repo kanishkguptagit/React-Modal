@@ -1,11 +1,11 @@
-import Card from '../UI/Card';
+import styles from './ResultsItem.module.css';
 
 const ResultsItem = (props) => {
-    return(
-        <Card>
-            <div>{props.name} ({props.age} years old)</div>
-        </Card>
-    )
-}
+  return (
+    <li className={styles.liitems}>
+      {props.name} ({props.age} years old)
+    </li>
+  );
+};
 
 export default ResultsItem;
